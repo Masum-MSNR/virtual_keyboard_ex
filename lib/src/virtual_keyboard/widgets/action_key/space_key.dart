@@ -42,6 +42,7 @@ class SpaceKey extends StatelessWidget {
               height: height,
               width: width * 1.5,
               decoration: keyDecoration,
+              clipBehavior: Clip.antiAlias,
               child: Material(
                 color: Colors.transparent,
                 child: InkWell(

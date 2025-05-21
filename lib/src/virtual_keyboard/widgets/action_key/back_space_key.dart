@@ -48,6 +48,7 @@ class _BackSpaceKeyState extends State<BackSpaceKey> {
             height: widget.height,
             width: widget.width * 1.5,
             decoration: widget.keyDecoration,
+            clipBehavior: Clip.antiAlias,
             child: Material(
               color: Colors.transparent,
               child: GestureDetector(
