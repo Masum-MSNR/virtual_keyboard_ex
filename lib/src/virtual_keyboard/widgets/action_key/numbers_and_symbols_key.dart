@@ -49,7 +49,7 @@ class NumbersAndSymbolsKey extends StatelessWidget {
             alignment: Alignment.center,
             child: Text(
               layoutStage != LayoutStage.one ? 'ABC' : '!#1',
-              style: TextStyle(fontSize: textSize),
+              style: TextStyle(fontSize: textSize, color: textColor),
             ),
           ),
         ),
