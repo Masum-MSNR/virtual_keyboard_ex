@@ -57,7 +57,7 @@ class SymbolsSwitchKey extends StatelessWidget {
                     children: [
                       Text(
                         layoutStage == LayoutStage.three ? '2/2' : '1/2',
-                        style: TextStyle(fontSize: textSize),
+                        style: TextStyle(fontSize: textSize, color: textColor),
                       ),
                     ],
                   ),
