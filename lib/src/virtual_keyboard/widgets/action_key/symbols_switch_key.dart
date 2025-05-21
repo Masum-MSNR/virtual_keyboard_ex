@@ -15,6 +15,7 @@ class SymbolsSwitchKey extends StatelessWidget {
     required this.textSize,
     required this.textColor,
     required this.layoutStage,
+    required this.splashColor,
   });
   final double height;
   final double width;
@@ -28,6 +29,7 @@ class SymbolsSwitchKey extends StatelessWidget {
   final double textSize;
   final Color textColor;
   final LayoutStage layoutStage;
+  final Color splashColor;
 
   @override
   Widget build(BuildContext context) {
@@ -49,6 +51,7 @@ class SymbolsSwitchKey extends StatelessWidget {
                 onTap: () {
                   onKeyPress(keyboardKey);
                 },
+                splashColor: splashColor,
                 child: SizedBox(
                   height: height,
                   width: width * 1.5,

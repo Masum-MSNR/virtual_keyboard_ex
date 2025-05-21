@@ -18,6 +18,7 @@ class VirtualKeyboard extends StatefulWidget {
     this.textColor = VkpColors.defaultKeyForegroundColor,
     this.keepFocusOn,
     this.actionKeyDecoration,
+    this.splashColor,
   });
 
   final Language defaultLanguage;
@@ -35,6 +36,7 @@ class VirtualKeyboard extends StatefulWidget {
   final double textSize;
   final Color textColor;
   final BoxDecoration? actionKeyDecoration;
+  final Color? splashColor;
 
   @override
   State<VirtualKeyboard> createState() => _VirtualKeyboardState();
@@ -197,6 +199,7 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
               textSize: widget.textSize,
               textColor: widget.textColor,
               layoutStage: layoutStage,
+              splashColor: widget.splashColor ?? VkpColors.defaultSplashColor,
             );
           } else {
             return CharKey(
@@ -211,6 +214,7 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
               keyDecoration: keyDecoration,
               textSize: widget.textSize,
               textColor: widget.textColor,
+              splashColor: widget.splashColor ?? VkpColors.defaultSplashColor,
             );
           }
         }),

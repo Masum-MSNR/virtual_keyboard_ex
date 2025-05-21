@@ -14,6 +14,7 @@ class BackSpaceKey extends StatefulWidget {
     required this.keyDecoration,
     required this.textSize,
     required this.textColor,
+    required this.splashColor,
   });
   final double height;
   final double width;
@@ -26,6 +27,7 @@ class BackSpaceKey extends StatefulWidget {
   final BoxDecoration keyDecoration;
   final double textSize;
   final Color textColor;
+  final Color splashColor;
 
   @override
   State<BackSpaceKey> createState() => _BackSpaceKeyState();
@@ -76,6 +78,7 @@ class _BackSpaceKeyState extends State<BackSpaceKey> {
                   onTap: () {
                     widget.onKeyPress(widget.keyboardKey);
                   },
+                  splashColor: widget.splashColor,
                   child: SizedBox(
                     height: widget.height,
                     width: widget.width * 1.5,

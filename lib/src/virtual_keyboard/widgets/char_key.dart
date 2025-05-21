@@ -14,6 +14,7 @@ class CharKey extends StatelessWidget {
     required this.keyDecoration,
     required this.textSize,
     required this.textColor,
+    required this.splashColor,
   });
 
   final double height;
@@ -27,6 +28,7 @@ class CharKey extends StatelessWidget {
   final BoxDecoration keyDecoration;
   final double textSize;
   final Color textColor;
+  final Color splashColor;
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +44,7 @@ class CharKey extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          splashColor: VkpColors.defaultSplashColor,
+          splashColor: splashColor,
           onTap: () {
             onKeyPress(keyboardKey);
           },

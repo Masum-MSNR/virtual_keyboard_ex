@@ -15,6 +15,7 @@ class NumbersAndSymbolsKey extends StatelessWidget {
     required this.textSize,
     required this.textColor,
     required this.layoutStage,
+    required this.splashColor,
   });
   final double height;
   final double width;
@@ -28,6 +29,7 @@ class NumbersAndSymbolsKey extends StatelessWidget {
   final double textSize;
   final Color textColor;
   final LayoutStage layoutStage;
+  final Color splashColor;
 
   @override
   Widget build(BuildContext context) {
@@ -46,6 +48,7 @@ class NumbersAndSymbolsKey extends StatelessWidget {
           onTap: () {
             onKeyPress(keyboardKey);
           },
+          splashColor: splashColor,
           child: Container(
             alignment: Alignment.center,
             child: Text(

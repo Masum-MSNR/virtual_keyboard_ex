@@ -14,6 +14,7 @@ class ShiftKey extends StatelessWidget {
     required this.keyDecoration,
     required this.textSize,
     required this.textColor,
+    required this.splashColor,
   });
   final double height;
   final double width;
@@ -26,6 +27,7 @@ class ShiftKey extends StatelessWidget {
   final BoxDecoration keyDecoration;
   final double textSize;
   final Color textColor;
+  final Color splashColor;
 
   @override
   Widget build(BuildContext context) {
@@ -47,6 +49,7 @@ class ShiftKey extends StatelessWidget {
                 onTap: () {
                   onKeyPress(keyboardKey);
                 },
+                splashColor: splashColor,
                 child: SizedBox(
                   height: height,
                   width: width * 1.5,

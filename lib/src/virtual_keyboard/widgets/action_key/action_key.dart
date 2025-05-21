@@ -15,6 +15,7 @@ class ActionKey extends StatelessWidget {
     required this.textSize,
     required this.textColor,
     required this.layoutStage,
+    required this.splashColor,
   });
 
   final double height;
@@ -29,6 +30,7 @@ class ActionKey extends StatelessWidget {
   final double textSize;
   final Color textColor;
   final LayoutStage? layoutStage;
+  final Color splashColor;
 
   @override
   Widget build(BuildContext context) {
@@ -46,6 +48,7 @@ class ActionKey extends StatelessWidget {
           keyDecoration: keyDecoration,
           textSize: textSize,
           textColor: textColor,
+          splashColor: splashColor,
         );
       case KeyAction.backSpace:
         return BackSpaceKey(
@@ -60,6 +63,7 @@ class ActionKey extends StatelessWidget {
           keyDecoration: keyDecoration,
           textSize: textSize,
           textColor: textColor,
+          splashColor: splashColor,
         );
       case KeyAction.myReturn:
         return ReturnKey(
@@ -74,6 +78,7 @@ class ActionKey extends StatelessWidget {
           keyDecoration: keyDecoration,
           textSize: textSize,
           textColor: textColor,
+          splashColor: splashColor,
         );
       case KeyAction.shift:
         return ShiftKey(
@@ -88,6 +93,7 @@ class ActionKey extends StatelessWidget {
           keyDecoration: keyDecoration,
           textSize: textSize,
           textColor: textColor,
+          splashColor: splashColor,
         );
       case KeyAction.numbersAndSymbols:
         return NumbersAndSymbolsKey(
@@ -103,6 +109,7 @@ class ActionKey extends StatelessWidget {
           textSize: textSize,
           textColor: textColor,
           layoutStage: layoutStage ?? LayoutStage.one,
+          splashColor: splashColor,
         );
       case KeyAction.switchLanguage:
         return SwitchLanguageKey(
@@ -117,6 +124,7 @@ class ActionKey extends StatelessWidget {
           keyDecoration: keyDecoration,
           textSize: textSize,
           textColor: textColor,
+          splashColor: splashColor,
         );
       case KeyAction.symbolsSwitch:
         return SymbolsSwitchKey(
@@ -132,6 +140,7 @@ class ActionKey extends StatelessWidget {
           textSize: textSize,
           textColor: textColor,
           layoutStage: layoutStage ?? LayoutStage.two,
+          splashColor: splashColor,
         );
       default:
         return Container();
