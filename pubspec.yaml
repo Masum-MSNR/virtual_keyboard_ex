@@ -1,0 +1,22 @@
+name: virtual_keyboard_plus
+description: "Virtual keyboard"
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  assets:
+    - assets/svgs/
