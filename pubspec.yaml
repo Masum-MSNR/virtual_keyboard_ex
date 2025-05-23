@@ -1,10 +1,11 @@
 name: virtual_keyboard_plus
 description: "Virtual keyboard"
-version: 0.0.5
+version: 0.0.6
 homepage:
 
 environment:
-  sdk: ^3.7.2
+#  sdk: ^3.7.2
+  sdk: ">=3.0.0 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:

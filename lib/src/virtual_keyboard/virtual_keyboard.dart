@@ -73,8 +73,7 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
       spaceLongPressCallback = widget.spaceLongPressCallback;
       backgroundColor =
           widget.backgroundColor ?? VkpColors.defaultBackgroundColor;
-      keyDecoration =
-          widget.keyDecoration ??
+      keyDecoration = widget.keyDecoration ??
           BoxDecoration(
             color: VkpColors.defaultKeyBackgroundColor,
             borderRadius: BorderRadius.circular(5),
@@ -87,8 +86,7 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
               ),
             ],
           );
-      actionKeyDecoration =
-          widget.actionKeyDecoration ??
+      actionKeyDecoration = widget.actionKeyDecoration ??
           BoxDecoration(
             color: VkpColors.defaultActionKeyColor,
             borderRadius: BorderRadius.circular(5),
@@ -124,8 +122,7 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
     spaceLongPressCallback = widget.spaceLongPressCallback;
     backgroundColor =
         widget.backgroundColor ?? VkpColors.defaultBackgroundColor;
-    keyDecoration =
-        widget.keyDecoration ??
+    keyDecoration = widget.keyDecoration ??
         BoxDecoration(
           color: VkpColors.defaultKeyBackgroundColor,
           borderRadius: BorderRadius.circular(5),
@@ -138,8 +135,7 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
             ),
           ],
         );
-    actionKeyDecoration =
-        widget.actionKeyDecoration ??
+    actionKeyDecoration = widget.actionKeyDecoration ??
         BoxDecoration(
           color: VkpColors.defaultActionKeyColor,
           borderRadius: BorderRadius.circular(5),
@@ -225,10 +221,9 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
   void _onKeyPress(VirtualKeyboardKey key) {
     FocusScope.of(context).requestFocus(widget.keepFocusOn);
 
-    final currentOffset =
-        textController.selection.baseOffset == -1
-            ? textController.text.length
-            : textController.selection.baseOffset;
+    final currentOffset = textController.selection.baseOffset == -1
+        ? textController.text.length
+        : textController.selection.baseOffset;
     String newText = "";
     final TextSelection newSelection;
     if (key.keyType == KeyType.char) {
@@ -352,6 +347,7 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
               layoutStage = LayoutStage.two;
             }
           });
+          break;
         default:
       }
     }
