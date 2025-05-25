@@ -1,7 +1,9 @@
 name: virtual_keyboard_ex
 description: "Virtual keyboard"
 version: 0.0.6
-homepage:
+homepage: https://github.com/Masum-MSNR/virtual_keyboard_ex
+repository: https://github.com/Masum-MSNR/virtual_keyboard_ex
+issue_tracker: https://github.com/Masum-MSNR/virtual_keyboard_ex/issues
 
 environment:
 #  sdk: ^3.7.2
