@@ -1,4 +1,4 @@
-part of '../../virtual_keyboard_plus.dart';
+part of '../../virtual_keyboard_ex.dart';
 
 class VkpColors {
   static const Color defaultSplashColor = Color(0xFFDDDDDD);

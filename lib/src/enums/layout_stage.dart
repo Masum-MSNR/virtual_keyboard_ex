@@ -1,3 +1,3 @@
-part of '../../virtual_keyboard_plus.dart';
+part of '../../virtual_keyboard_ex.dart';
 
 enum LayoutStage { one, two, three }

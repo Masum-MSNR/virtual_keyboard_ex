@@ -1,4 +1,4 @@
-part of '../../virtual_keyboard_plus.dart';
+part of '../../virtual_keyboard_ex.dart';
 
 class VirtualKeyboardKey {
   String? text;
@@ -13,16 +13,14 @@ class VirtualKeyboardKey {
     this.action,
   }) {
     if (text == null && action != null) {
-      text =
-          action == KeyAction.space
-              ? ' '
-              : (action == KeyAction.myReturn ? '\n' : '');
+      text = action == KeyAction.space
+          ? ' '
+          : (action == KeyAction.myReturn ? '\n' : '');
     }
     if (capsText == null && action != null) {
-      capsText =
-          action == KeyAction.space
-              ? ' '
-              : (action == KeyAction.myReturn ? '\n' : '');
+      capsText = action == KeyAction.space
+          ? ' '
+          : (action == KeyAction.myReturn ? '\n' : '');
     }
   }
 

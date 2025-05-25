@@ -1,4 +1,4 @@
-part of '../../virtual_keyboard_plus.dart';
+part of '../../virtual_keyboard_ex.dart';
 
 class KeyProcessor {
   static List<List<VirtualKeyboardKey>> processKey(List<List<String>> keys) {

@@ -1,4 +1,4 @@
-part of '../../../virtual_keyboard_plus.dart';
+part of '../../../virtual_keyboard_ex.dart';
 
 class EnglishLanguage extends BaseLanguage {
   EnglishLanguage({super.language = Language.english});
@@ -56,7 +56,6 @@ class EnglishLanguage extends BaseLanguage {
     ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],
     ['`', '~', '\\', '|', '{', '}', '€', '£', '¥', '₩'],
     ['°', '•', '○', '●', '□', '■', '♤', '♡', '◇', '♧'],
-
     [
       KeyAction.symbolsSwitch.name,
       '☆',

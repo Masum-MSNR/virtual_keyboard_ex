@@ -10,7 +10,7 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
-  virtual_keyboard_plus:
+  virtual_keyboard_ex:
     path: ../
 
 
