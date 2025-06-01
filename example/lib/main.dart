@@ -117,7 +117,7 @@ class _DemoPageState extends State<DemoPage> {
               keepFocusOn: keyboardFocusNode,
               height: MediaQuery.of(context).size.height * 0.33,
               width: MediaQuery.of(context).size.width,
-              keyboardType: VirtualKeyboardType.text,
+              keyboardType: VirtualKeyboardType.number,
               defaultLanguage: Language.english,
               textSize: 16,
               verticalGap: 5,
